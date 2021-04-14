@@ -1,0 +1,449 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: century-gothic;
+}
+
+p {
+    margin: 0px;
+}
+
+#content{
+    transition: margin-right 0.7s;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/* NAVBAR */
+.slide{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 0;
+}
+
+.slide i{
+    color: #303030;
+}
+
+.slide i:hover{
+    color: #ecb245;
+    transition: 0.7s;
+}
+
+.slide a{
+    font-size: 40px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.slide a:visited {
+    color: #fff;
+}
+
+.nav-right{
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-right a{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 700;
+}
+
+.nav-right a:hover{
+    color: #ecb245;
+    transition: .7s;
+}
+
+.nav-right .close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.logo-left{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo-left img{
+    width: 250px;
+    height: auto;
+}
+
+.hero-image img{
+    width: 100vw;
+    height: auto;
+}
+
+.mision-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 75vh;
+}
+
+.mision-vision .col-sm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.destacado{
+    background-color: #ecb245;
+    color: #000;
+}
+
+.mision-vision p {
+    font-weight: 200;
+    font-size: 16px;
+    width: 60vw;
+}
+
+.titulo{
+    font-family: 'Fredoka One', cursive !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.seccion-2 {
+    padding: 50px 5vw 50px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-img { 
+    background-color: #303030;
+}
+
+.hero-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75vh;
+    align-items: center;
+}
+
+.circle {
+    background-color: #ecb245;
+    color: #303030;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive !important;
+    text-transform: uppercase;
+}
+
+
+.hero-img-2 {
+    background-image: url(img/hero-03.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #303030;
+    height: 75vh;
+    position: relative;
+}
+
+.hero-img-2 h2 {
+    position: absolute;
+    bottom: 5vh;
+    right: 2vw;
+    background-color: #ecb245;
+    font-family: 'Fredoka One', cursive !important;
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.quienes-somos {
+    height: 75vh;
+}
+
+.quienes-somos .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quienes-somos h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.quienes-somos p {
+    width: 60%;
+}
+
+.quienes-somos-rrss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.quienes-somos-rrss i {
+    font-size: 50px;
+    color: #303030;
+    margin-right: 10px;
+}
+
+.quienes-somos-rrss a {
+    text-decoration: none;
+    color: #303030;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.quienes-somos-rrss a:hover {
+    color: #303030;
+    background-color: #ecb245;
+    transition: 2s ease all;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios a {
+    text-decoration: none !important;
+}
+
+.servicios h2 {
+    background-color: #ecb245;
+    width: 210px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+
+.footer{
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 30px 0px 30px 0px;
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.circles-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.circle-2 {
+    margin-top: 20px;   
+    color: #fff;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: 'Fredoka One', cursive !important;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #303030;
+
+}
+
+.circle-2 a {
+    color: #fff;
+}
+
+#circle-01 {
+    background-image: url(img/servicios-01.jpg);  
+}
+
+#circle-02 {
+    background-image: url(img/servicios-02.jpg);
+}
+
+#circle-03 {
+    background-image: url(img/servicios-03.jpg);
+}
+
+#circle-04 {
+    background-image: url(img/servicios-04.jpg);
+}
+
+#circle-05 {
+    background-image: url(img/servicios-05.jpg);
+}
+
+.circle-2:hover {
+    color: #ecb245;
+    transition: 2s;
+    text-decoration: none;
+}
+
+#servicio-detalle-01 {
+    background-image: url(img/servicios-01-h.jpg);
+}
+
+#servicio-detalle-02 {
+    background-image: url(img/servicios-02-h.jpg);
+}
+
+#servicio-detalle-03 {
+    background-image: url(img/servicios-03-h.jpg);
+}
+
+#servicio-detalle-04 {
+    background-image: url(img/servicios-04-h.jpg);
+}
+
+#servicio-detalle-05 {
+    background-image: url(img/servicios-05-h.jpg);
+}
+
+.servicio-detalle {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #303030;
+    height: 75vh;
+    position: relative;
+    margin: 20px auto;
+}
+
+.servicio-detalle h2{
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+    background-color: #ecb245;
+    font-family: 'Fredoka One', cursive !important;
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.servicio-detalle-texto {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio-detalle-texto h3 {
+    font-family: 'Fredoka One', cursive !important;
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.servicio-detalle-texto p {
+    width: 60%;
+    text-align: justify;
+}
+
+.contacto {
+    height: 75vh;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto h3{
+    font-family: 'Fredoka One', cursive !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.footer a, .footer p{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.footer p i{
+    margin-right: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer {
+        font-weight: 600;
+        font-size: 15px;
+        padding: 30px 0px 30px 0px;
+    }
+}
+/* COLORES */
+
+.negro{color: #1c1e1c !important;}
+.gris{color: #303030 !important;}
+.rosado{color: #e8959b !important;}
+.naranjo{color: #ecb245 !important;}
+.blanco{color: #fff !important;}
+.gb-blanco{background-color: #fff !important;}
+.bg-negro{background-color: #1c1e1c !important;}
+.bg-gris{background-color: #303030 !important;}
+.bg-naranjo{background-color: #ecb245 !important;}
+.bg-rosado{background-color: #e8959b !important;}
+
+/* END COLORES */
+
+/* FONT */
+@font-face {
+    font-family: 'century-gothic';
+    src: url(font/07558_CenturyGothic.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
