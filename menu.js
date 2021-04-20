@@ -1,6 +1,6 @@
 function openSlideMenu(){
-    document.getElementById('menu').style.width = '80vw';
-    document.getElementById('content').style.marginRight = '80vw';
+    document.getElementById('menu').style.width = '50vw';
+    document.getElementById('content').style.marginRight = '50vw';
     document.getElementById('allpage').style.overflowY = 'hidden';
 }
 

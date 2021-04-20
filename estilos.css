@@ -26,7 +26,8 @@ p {
     position: fixed;
     top: 20px;
     right: 30px;
-    z-index: 0;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .slide i{
@@ -52,7 +53,7 @@ p {
     height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     right: 0;
     overflow-x: hidden;
     padding-top: 60px;
@@ -104,12 +105,72 @@ p {
     height: auto;
 }
 
+#slider {
+    overflow: hidden;
+    z-index: 0;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
 .mision-vision {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 75vh;
+    height: 70vh;
+}
+
+.mision-vision .row {
+    margin: 30px 0px;
 }
 
 .mision-vision .col-sm {
@@ -125,7 +186,7 @@ p {
 
 .mision-vision p {
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
     width: 60vw;
 }
 
@@ -154,7 +215,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 75vh;
+    height: 70vh;
     align-items: center;
 }
 
@@ -179,7 +240,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #303030;
-    height: 75vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -195,7 +256,7 @@ p {
 }
 
 .quienes-somos {
-    height: 75vh;
+    height: 70vh;
 }
 
 .quienes-somos .col {
@@ -205,10 +266,12 @@ p {
     justify-content: center;
 }
 
-.quienes-somos h3 {
+.quienes-somos h2 {
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Fredoka One', cursive !important;
+    color: #303030;
 }
 
 .quienes-somos p {
@@ -244,7 +307,7 @@ p {
 .servicios {
     display: flex;
     flex-direction: column;
-    height: 75vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -356,7 +419,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #303030;
-    height: 75vh;
+    height: 70vh;
     position: relative;
     margin: 20px auto;
 }
@@ -373,7 +436,7 @@ p {
 }
 
 .servicio-detalle-texto {
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -393,7 +456,7 @@ p {
 }
 
 .contacto {
-    height: 75vh;
+    height: 70vh;
     background-color: #303030;
     display: flex;
     align-items: center;
